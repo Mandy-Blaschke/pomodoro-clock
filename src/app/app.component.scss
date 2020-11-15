@@ -1,0 +1,90 @@
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .timer-settings {
+
+    h1 {
+      color: #2b880a;
+      text-shadow: 2px 2px 2px #000000;
+      font-size: 2.5rem;
+      margin-bottom: 45px;
+    }
+
+    .settings {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #2b880a;
+      text-shadow: 2px 1px 1px #000000;
+
+      label {
+        width: 300px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 2rem;
+
+        input {
+          background-color: ghostwhite;
+          text-align: center;
+          width: 35px;
+          border: none;
+          box-shadow: 2px 2px 6px gray;
+          font-size: 1.2rem;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .timer {
+    position: relative;
+    margin: 25px 0 85px 0;
+
+    .stalk {
+      width: 45px;
+      height: 20px;
+      background-image: radial-gradient(ellipse, #7ee944, #4ecb19, #305124);
+      border-radius: 50% 50% 79% 79%;
+      position: absolute;
+      left: 40%;
+      top: -3px;
+    }
+
+    .timer-view {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 220px;
+      height: 150px;
+      border-radius: 95px;
+      box-shadow: 10px 15px 15px grey;
+      background-image: radial-gradient(ellipse, red, #cb1919, #512424);
+      color: ghostwhite;
+      text-shadow: 2px 1px 2px black;
+    }
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+
+    button {
+      width: 70px;
+      outline: none;
+      margin: 0 15px;
+      padding: 5px;
+      background-color: #56d715;
+      box-shadow: 2px 2px 2px gray;
+      font-size: 1.2rem;
+
+      &:active {
+        color: whitesmoke;
+        background-color: #cb1919;
+        box-shadow: inset 2px 2px 2px black;
+        transform: scale(0.9);
+      }
+    }
+  }
+}

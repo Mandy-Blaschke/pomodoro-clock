@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+body, button, input {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+body {
+  margin: 0;
+  padding: 25px;
+  background-color: #d6d681;
+}
